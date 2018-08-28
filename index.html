@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Електрон Вебов</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/common.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fix">
+	  <header class="row line">
+	  	<div class="container">
+	  		<div class="row line align-items-center">
+			  	<div class="col-xl-1 col-2">
+			  		<a href="#" class="logo"></a>
+			  	</div>
+			  	<div class="col-xl-4 d-none d-xl-block">
+			  		<input type="text" name="search" class="searchInput" placeholder="Поиск">
+			  	</div>
+			  	<div class="col-xl-2 col-7 ml-auto headerUser dropdown">
+			  		<a href="#" id="dropdownMenuLink">
+				  		<span class="login">Электрон</span>
+				  		<img src="img/header_avatar.png">
+				  		<span class="dd" id="dd"></span>
+				  		<span class="ddo" id="ddo"></span>
+				  	</a>
+				  	<div class="dropdown-menu" id="dropdownMenu">
+					    <a class="dropdown-item" href="#">Моя страница</a>
+					    <a class="dropdown-item" href="#">Выход</a>
+					    <div class="pointer"></div>
+					</div>
+			  	</div>
+			  </div>
+			</div>
+	  </header>
+	  <main class="container">
+	  	 <div class="row">
+		  	<div class="col-xl-7 col-md-12 info row">
+		  		<div class="col name">
+		  			Электрон Вебов
+		  		</div>
+		  		<div class="w-100"></div>
+		  		<div class="col status" id="statusBar">
+		  		</div>
+		  		<form class="statusUpdate" id="statusUpdate" onsubmit="saveStatus(); return false;">
+		  			<input type="text" name="status" id="status" placeholder="введите статус">
+		  			<input type="button" name="statusSave" value="cохранить" onclick="saveStatus();">
+		  			<div class="pointer"></div>
+		  		</form>
+		  		<div class="w-100 delimetr"></div>
+		  		<div class="col-xl-4 col-12 birthdate">
+		  			Дата рождения:
+		  		</div>
+		  		<div class="col-xl-8 col-12 param">
+		  			23 сентября 1988 г.
+		  		</div>
+		  		<div class="w-100"></div>
+		  		<div class="col-xl-4 col-12 family">
+		  			Семейное положение:
+		  		</div>
+		  		<div class="col-xl-8 col-12 param">женат</div>
+		  		<div class="w-100"></div>
+		  		<div class="col-xl-4 col-12 study">
+		  			Образование:
+		  		</div>
+		  		<div class="col-xl-8 col-12 param">ИжГТУ им. М.Т.Калашникова (бывш. ИМИ)'12</div>
+		  		<div class="w-100"></div>
+		  		<div class="col-xl-4 col-12 site">
+		  			Веб-сайт:
+		  		</div>
+		  		<div class="col-xl-8 col-12 param">www.web-electron.ru</div>
+		  		<div class="w-100"></div>
+		  		<div class="col-xl-3 col-7 about">
+		  			Немного о себе:
+		  		</div>
+		  		<div class="col-xl-9 col-4 delimetrSec"></div>
+		  		<div class="w-100"></div>
+		  		<div class="col aboutText">
+		  			<p>С другой стороны новая модель организационной деятельности влечет за собой процесс внедрения и модернизации новых предложений. Товарищи! новая модель организационной деятельности в значительной степени обуславливает создание новых предложений.</p>
+		  			<p>Не следует, однако забывать, что укрепление и развитие структуры в значительной степени обуславливает создание систем массового участия.</p><p>Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа направлений прогрессивного развития.</p>
+		  			<p>Задача организации, в особенности же укрепление и развитие структуры позволяет оценить значение направлений прогрессивного развития.</p>
+		  		</div>
+		  	</div>
+		  	<div class="col-xl-4 col-12 ml-xl-auto avatar order-xl-2 order-first">
+		  		<img src="img/avatar.png" class="img-fluid">
+		  	</div>
+		 </div>
+		 <div class="row photos justify-content-between">
+		 	<span class="photoTitle">Фотографии Электрона</span>
+		 	<div class="scroll row">
+			 	<div class="col">
+			 		<img src="img/photo_1.jpg">
+			 	</div>
+			 	<div class="col">
+			 		<img src="img/photo_2.jpg">
+			 	</div>
+			 	<div class="col">
+			 		<img src="img/photo_3.jpg">
+			 	</div>
+			 	<div class="col">
+			 		<img src="img/photo_4.jpg">
+			 	</div>
+		 	</div>
+		</div>
+		 <div id="comments">
+		 </div>
+		 <div id="commentsAdd">
+		 	<div class="row commsHead">
+		 		<div class="col">
+		 			Добавить запись
+		 		</div>
+		 	</div>
+		 	<div class="row">
+			 	<div class="col commHead">
+		 			<input type="text" name="login" id="login" placeholder="Ваше имя">
+		 		</div>
+		 		<div class="w-100"></div>
+		 		<div class="col">
+		 			<textarea name="message" id="message" placeholder="Текст записи" rows="3"></textarea>
+		 		</div>
+		 		<div class="w-100"></div>
+		 		<div class="col">
+		 			<button onclick="addComment(document.getElementById('login').value, document.getElementById('message').value);">Отправить</button>
+		 		</div>
+		 	</div>
+		 </div>
+	  </main>
+	  <footer class="row line align-items-center">
+	  	<div class="container">
+	  		<div class="row line align-items-center">
+			  	<div class="col">
+			  		<span>elbook 2018</span>
+			  	</div>
+			</div>
+		</div>
+	  </footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
